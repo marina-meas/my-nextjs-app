@@ -1,8 +1,15 @@
+<<<<<<< HEAD
 import { generateYAxis } from "@/app/lib/utils";
 import { CalendarIcon } from "@heroicons/react/24/outline";
 import { lusitana } from "@/app/ui/fonts";
 import { Revenue } from "@/app/lib/definitions";
 import { fetchRevenue } from "@/app/lib/data";
+=======
+import { generateYAxis } from '@/app/lib/utils';
+import { CalendarIcon } from '@heroicons/react/24/outline';
+import { lusitana } from '@/app/ui/fonts';
+import { Revenue } from '@/app/lib/definitions';
+>>>>>>> 42449fa6a9d05c57e7cd8f273b1e6269dc91e9b8
 
 // This component is representational only.
 // For data visualization UI, check out:
@@ -10,6 +17,7 @@ import { fetchRevenue } from "@/app/lib/data";
 // https://www.chartjs.org/
 // https://airbnb.io/visx/
 
+<<<<<<< HEAD
 export default async function RevenueChart() {
   const revenue = await fetchRevenue(); // Fetch data inside the component
   const chartHeight = 350;
@@ -20,6 +28,21 @@ export default async function RevenueChart() {
   if (!revenue || revenue.length === 0) {
     return <p className="mt-4 text-gray-400">No data available.</p>;
   }
+=======
+export default async function RevenueChart({
+  revenue,
+}: {
+  revenue: Revenue[];
+}) {
+  const chartHeight = 350;
+  // NOTE: Uncomment this code in Chapter 7
+
+  // const { yAxisLabels, topLabel } = generateYAxis(revenue);
+
+  // if (!revenue || revenue.length === 0) {
+  //   return <p className="mt-4 text-gray-400">No data available.</p>;
+  // }
+>>>>>>> 42449fa6a9d05c57e7cd8f273b1e6269dc91e9b8
 
   return (
     <div className="w-full md:col-span-4">
@@ -28,7 +51,11 @@ export default async function RevenueChart() {
       </h2>
       {/* NOTE: Uncomment this code in Chapter 7 */}
 
+<<<<<<< HEAD
       <div className="rounded-xl bg-gray-50 p-4">
+=======
+      {/* <div className="rounded-xl bg-gray-50 p-4">
+>>>>>>> 42449fa6a9d05c57e7cd8f273b1e6269dc91e9b8
         <div className="sm:grid-cols-13 mt-0 grid grid-cols-12 items-end gap-2 rounded-md bg-white p-4 md:gap-4">
           <div
             className="mb-6 hidden flex-col justify-between text-sm text-gray-400 sm:flex"
@@ -57,7 +84,11 @@ export default async function RevenueChart() {
           <CalendarIcon className="h-5 w-5 text-gray-500" />
           <h3 className="ml-2 text-sm text-gray-500 ">Last 12 months</h3>
         </div>
+<<<<<<< HEAD
       </div>
+=======
+      </div> */}
+>>>>>>> 42449fa6a9d05c57e7cd8f273b1e6269dc91e9b8
     </div>
   );
 }

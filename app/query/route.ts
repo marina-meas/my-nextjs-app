@@ -13,6 +13,7 @@
 // 	return data.rows;
 // }
 
+<<<<<<< HEAD
 // export async function GET() {
 //   // return Response.json({
 //   //   message:
@@ -24,3 +25,16 @@
 //   	return Response.json({ error }, { status: 500 });
 //   }
 // }
+=======
+export async function GET() {
+  return Response.json({
+    message:
+      'Uncomment this file and remove this line. You can delete this file when you are finished.',
+  });
+  // try {
+  // 	return Response.json(await listInvoices());
+  // } catch (error) {
+  // 	return Response.json({ error }, { status: 500 });
+  // }
+}
+>>>>>>> 42449fa6a9d05c57e7cd8f273b1e6269dc91e9b8
