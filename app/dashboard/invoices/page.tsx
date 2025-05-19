@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import Pagination from "@/app/ui/invoices/pagination";
 import Search from "@/app/ui/search";
 import Table from "@/app/ui/invoices/table";
@@ -37,8 +36,3 @@ export default async function Page(props: {
     </div>
   );
 }
-=======
-export default function Page() {
-    return <p>Invoices Page</p>;
-  }
->>>>>>> 42449fa6a9d05c57e7cd8f273b1e6269dc91e9b8
